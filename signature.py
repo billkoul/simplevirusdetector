@@ -1,10 +1,6 @@
 import os
 import urllib2
-import cPickle as Pickle
-from subprocess import Popen, PIPE
 from argparse import ArgumentParser
-from bs4 import BeautifulSoup
-import codecs
 
 signatures = []
 
