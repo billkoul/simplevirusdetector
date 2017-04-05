@@ -4,14 +4,14 @@ from argparse import ArgumentParser
 
 signatures = []
 
-def compile_sigs():
+def add_sigs():
     with open('virussignatures') as fp:
     	for line in fp:
 		signatures.append(line.split("=",1)[1])
 
-def check_sig(fn):
+def check_sig(file):
     dump = " "
-    with open(fn, 'rb') as f:
+    with open(file, 'rb') as f:
     	for chunk in iter(lambda: f.read(32), b''):
         	dump = codecs.encode(chunk, 'hex')
 
@@ -30,14 +30,14 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    print("[*] Checking File for Known Signatures")
-    print("[*] This may take a moment...")
+    print("Checking File for Known Signatures")
+    print("This may take a moment...")
 
-    compile_sigs()
+    add_sigs()
     results = check_sig(args.file_path)
 
     if(results):
-    	print("\n[*] File Signature(s) detected:\n")
+    	print("\nSignature detected:\n")
 	print(results)
     else:
-        print("\n[!] No File Signature Detected.\n")
+        print("\nNo Signature Detected.\n")
