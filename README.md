@@ -1,4 +1,4 @@
-<b>SimpleSigMalwareDetector<b>
+<b>SimpleSigMalwareDetector</b>
 
 Simple Signature-based malware detector tool written in Python.
 
