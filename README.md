@@ -1,4 +1,6 @@
-# simplevirusdetector
-Simple signature-based malware detector written in Python
+<b>SimpleSigMalwareDetector<b>
 
-Written by Vasilis Kouliaridis
+Simple Signature-based malware detector tool written in Python.
+
+<b>Use:</b>
+sigmaldetector.py virus.file
