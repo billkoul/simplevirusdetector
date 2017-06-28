@@ -3,4 +3,4 @@
 Simple Signature-based malware detector tool written in Python.
 
 <b>Use:</b><br>
-sigmaldetector.py virus.file
+python sigmaldetector.py virus.file
