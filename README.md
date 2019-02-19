@@ -1,6 +1,6 @@
 <b>SigMalwareDetector</b>
 
-Simple Signature-based malware detector tool written in Python.
+A simple static signature-based malware detector tool written in Python.
 
 <b>Use:</b><br>
 python sigmaldetector.py virus.file
